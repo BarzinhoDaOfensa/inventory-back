@@ -24,9 +24,14 @@
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
 		<dependency>
+<<<<<<< HEAD
 			<groupId>org.springframework.data</groupId>
 			<artifactId>spring-data-envers</artifactId>
 			<version>2.1.11.RELEASE</version>
+=======
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+>>>>>>> f0ca954... Initial Spring initializr project for inventory-back commit
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -34,6 +39,7 @@
 		</dependency>
 
 		<dependency>
+<<<<<<< HEAD
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
 			<scope>runtime</scope>
@@ -74,6 +80,28 @@
 			<version>0.3</version>
 		</dependency>
 
+=======
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>org.junit.vintage</groupId>
+					<artifactId>junit-vintage-engine</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+>>>>>>> f0ca954... Initial Spring initializr project for inventory-back commit
 	</dependencies>
 
 	<build>
@@ -82,6 +110,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+<<<<<<< HEAD
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
@@ -90,6 +119,8 @@
 					<skipTests>true</skipTests>
 				</configuration>
 			</plugin>
+=======
+>>>>>>> f0ca954... Initial Spring initializr project for inventory-back commit
 		</plugins>
 	</build>
 

@@ -1,6 +1,7 @@
 package com.barzinhodaofensa.inventoryback;
 
 import org.springframework.boot.SpringApplication;
+<<<<<<< HEAD
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.embedded.tomcat.TomcatConnectorCustomizer;
@@ -23,12 +24,18 @@ import java.util.List;
 
 @SpringBootApplication
 @EnableJpaAuditing
+=======
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+>>>>>>> f0ca954... Initial Spring initializr project for inventory-back commit
 public class InventoryBackApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(InventoryBackApplication.class, args);
 	}
 
+<<<<<<< HEAD
 	@Bean
 	public ConfigurableServletWebServerFactory webServerFactory() {
 		TomcatServletWebServerFactory factory = new TomcatServletWebServerFactory();
@@ -68,4 +75,6 @@ public class InventoryBackApplication {
 		}
 		return template;
 	}
+=======
+>>>>>>> f0ca954... Initial Spring initializr project for inventory-back commit
 }
