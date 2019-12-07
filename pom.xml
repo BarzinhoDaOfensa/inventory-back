@@ -25,6 +25,7 @@
 		</dependency>
 		<dependency>
 <<<<<<< HEAD
+<<<<<<< HEAD
 			<groupId>org.springframework.data</groupId>
 			<artifactId>spring-data-envers</artifactId>
 			<version>2.1.11.RELEASE</version>
@@ -32,6 +33,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
 >>>>>>> f0ca954... Initial Spring initializr project for inventory-back commit
+=======
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-envers</artifactId>
+			<version>2.1.11.RELEASE</version>
+>>>>>>> 2ce6e86... Added auth0 authentication for login page
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -39,6 +45,7 @@
 		</dependency>
 
 		<dependency>
+<<<<<<< HEAD
 <<<<<<< HEAD
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
@@ -84,24 +91,52 @@
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
+=======
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<scope>runtime</scope>
+>>>>>>> 2ce6e86... Added auth0 authentication for login page
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
-			<exclusions>
-				<exclusion>
-					<groupId>org.junit.vintage</groupId>
-					<artifactId>junit-vintage-engine</artifactId>
-				</exclusion>
-			</exclusions>
 		</dependency>
 		<dependency>
-			<groupId>org.springframework.security</groupId>
-			<artifactId>spring-security-test</artifactId>
-			<scope>test</scope>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.10</version>
+			<scope>provided</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+		<!--		<dependency>-->
+		<!--			<groupId>com.auth0</groupId>-->
+		<!--			<artifactId>auth0-spring-security-api</artifactId>-->
+		<!--			<version>1.1.0</version>-->
+		<!--		</dependency>-->
+		<dependency>
+			<groupId>com.auth0</groupId>
+			<artifactId>auth0</artifactId>
+			<version>0.1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>4.4.1</version>
+		</dependency>
+<<<<<<< HEAD
 >>>>>>> f0ca954... Initial Spring initializr project for inventory-back commit
+=======
+		<dependency>
+			<groupId>com.auth0</groupId>
+			<artifactId>spring-security-auth0</artifactId>
+			<version>0.3</version>
+		</dependency>
+
+>>>>>>> 2ce6e86... Added auth0 authentication for login page
 	</dependencies>
 
 	<build>
@@ -111,6 +146,9 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2ce6e86... Added auth0 authentication for login page
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
@@ -119,8 +157,11 @@
 					<skipTests>true</skipTests>
 				</configuration>
 			</plugin>
+<<<<<<< HEAD
 =======
 >>>>>>> f0ca954... Initial Spring initializr project for inventory-back commit
+=======
+>>>>>>> 2ce6e86... Added auth0 authentication for login page
 		</plugins>
 	</build>
 
