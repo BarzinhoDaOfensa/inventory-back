@@ -45,6 +45,12 @@ public class ProductController {
     public Product update(@RequestBody Product product) {
         return productRepository.save(product);
     }
+    @RequestMapping(value = "save", method = RequestMethod.POST)
+    @ResponseStatus(HttpStatus.OK)
+    @ResponseBody
+    public Product save(@RequestBody Product product) {
+        return productRepository.save(product);
+    }
 
     @RequestMapping(value = "/deleteById", method = RequestMethod.DELETE)
     @ResponseStatus(HttpStatus.OK)
