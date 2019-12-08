@@ -1,0 +1,54 @@
+package com.barzinhodaofensa.inventoryback.controller;
+
+
+import com.barzinhodaofensa.inventoryback.entity.Product;
+import com.barzinhodaofensa.inventoryback.repository.ProductRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+import java.util.Optional;
+
+@Controller
+@RequestMapping(value = "product")
+public class ProductController {
+
+    private ProductRepository productRepository;
+
+    @Autowired
+    public ProductController(ProductRepository productRepository) {
+        this.productRepository = productRepository;
+    }
+
+
+    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
+    @ResponseStatus(HttpStatus.OK)
+    @ResponseBody
+    public Product findById(@PathVariable String id) throws Exception {
+        Optional<Product> optionalProduct = productRepository.findById(id);
+        return optionalProduct.orElseThrow(Exception::new);
+    }
+
+    @RequestMapping(value = "/findAll", method = RequestMethod.GET)
+    @ResponseStatus(HttpStatus.OK)
+    @ResponseBody
+    public List<Product> findAll(@PathVariable String id) {
+        List<Product> products = productRepository.findAll();
+        return products;
+    }
+
+    @RequestMapping(value = "", method = RequestMethod.PUT)
+    @ResponseStatus(HttpStatus.OK)
+    @ResponseBody
+    public Product update(@RequestBody Product product) {
+        return productRepository.save(product);
+    }
+
+    @RequestMapping(value = "/deleteById", method = RequestMethod.DELETE)
+    @ResponseStatus(HttpStatus.OK)
+    public void deleteById(@RequestBody String id) {
+        productRepository.deleteById(id);
+    }
+}
