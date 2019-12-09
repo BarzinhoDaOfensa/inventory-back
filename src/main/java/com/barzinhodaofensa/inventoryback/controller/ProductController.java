@@ -23,7 +23,7 @@ public class ProductController {
     }
 
 
-    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
+    @RequestMapping(value = "{id}", method = RequestMethod.GET)
     @ResponseStatus(HttpStatus.OK)
     @ResponseBody
     public Product findById(@PathVariable String id) throws Exception {
@@ -31,10 +31,10 @@ public class ProductController {
         return optionalProduct.orElseThrow(Exception::new);
     }
 
-    @RequestMapping(value = "/findAll", method = RequestMethod.GET)
+    @RequestMapping(value = "findAll", method = RequestMethod.GET)
     @ResponseStatus(HttpStatus.OK)
     @ResponseBody
-    public List<Product> findAll(@PathVariable String id) {
+    public List<Product> findAll() {
         List<Product> products = productRepository.findAll();
         return products;
     }
@@ -52,7 +52,7 @@ public class ProductController {
         return productRepository.save(product);
     }
 
-    @RequestMapping(value = "/deleteById", method = RequestMethod.DELETE)
+    @RequestMapping(value = "deleteById", method = RequestMethod.DELETE)
     @ResponseStatus(HttpStatus.OK)
     public void deleteById(@RequestBody String id) {
         productRepository.deleteById(id);
