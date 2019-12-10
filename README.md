@@ -1,23 +1,20 @@
 # StiickStock-Back
 
-### Visão Geral
+### Overview
 
-Este é um projeto é uma solução para mini-empreededores e pequenos empresarios que tem a necessida de um melhor e completo gerenciamento de estoque via sistema web. O StiickStock vem com a proposta de ser mais simples e mais coeso do que as marcas já  existentes, provendo algo bom e barato.
+StiickStock is a solution for mini-entrepreneurs and small business owners who need better and complete inventory management via web system. StiickStock comes with the proposal to be simpler and more cohesive than existing brands, providing something good and cheap.
 
 ### Detalhes da implementação
-Neste projeto, as principais tecnologias utilizadas foram:
-* Spring-Boot: para implementação do padrão MVC;
-* MongoDB: como banco de dados relacional;
-* Auth0: como sistema de gerenciamento de usuarios e autenticação;
-* Maven: para gerenciamento do ciclo de build da aplicação.
+In this project, the main technologies used were:
+* Spring-Boot
+* MongoDB
+* Auth0
+* Maven
 
-### Instalação
-Com o terminal na pasta raiz do projeto digite:
+## Project setup
+With the terminal in the project root folder:
 ```
 mvn clean install 
-```
-em seguida:
-```
 cd target
 java -jar [nome do arquivo].jar
 ```
