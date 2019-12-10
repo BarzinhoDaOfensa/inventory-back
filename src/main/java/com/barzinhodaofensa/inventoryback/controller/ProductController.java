@@ -54,7 +54,7 @@ public class ProductController {
 
     @RequestMapping(value = "deleteById", method = RequestMethod.DELETE)
     @ResponseStatus(HttpStatus.OK)
-    public void deleteById(@RequestBody String id) {
+    public void deleteById(@PathVariable String id) {
         productRepository.deleteById(id);
     }
 }
