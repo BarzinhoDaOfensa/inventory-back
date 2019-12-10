@@ -52,7 +52,7 @@ public class ProductController {
         return productRepository.save(product);
     }
 
-    @RequestMapping(value = "deleteById", method = RequestMethod.DELETE)
+    @RequestMapping(value = "deleteById/{id}", method = RequestMethod.DELETE)
     @ResponseStatus(HttpStatus.OK)
     public void deleteById(@PathVariable String id) {
         productRepository.deleteById(id);
