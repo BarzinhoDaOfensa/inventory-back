@@ -1,4 +1,4 @@
-package com.barzinhodaofensa.inventoryback;
+package com.stiick.stockback;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

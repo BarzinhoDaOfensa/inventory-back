@@ -1,4 +1,4 @@
-package com.barzinhodaofensa.inventoryback;
+package com.stiick.stockback;
 
 import org.springframework.boot.SpringApplication;
 import org.apache.http.impl.client.HttpClientBuilder;

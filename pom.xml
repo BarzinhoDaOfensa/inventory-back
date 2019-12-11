@@ -8,11 +8,11 @@
 		<version>2.2.2.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.barzinhodaofensa</groupId>
-	<artifactId>inventory-back</artifactId>
+	<groupId>com.stiick</groupId>
+	<artifactId>stock-back</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>inventory-back</name>
-	<description>Spring Boot  project for inventory-back</description>
+	<name>stiickstock-back</name>
+	<description>Spring Boot  project for stiickstock-back</description>
 
 	<properties>
 		<java.version>1.8</java.version>

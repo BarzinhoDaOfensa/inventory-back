@@ -1,8 +1,8 @@
-package com.barzinhodaofensa.inventoryback.controller;
+package com.stiick.stockback.controller;
 
 
-import com.barzinhodaofensa.inventoryback.entity.Product;
-import com.barzinhodaofensa.inventoryback.repository.ProductRepository;
+import com.stiick.stockback.entity.Product;
+import com.stiick.stockback.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
@@ -21,7 +21,6 @@ public class ProductController {
     public ProductController(ProductRepository productRepository) {
         this.productRepository = productRepository;
     }
-
 
     @RequestMapping(value = "{id}", method = RequestMethod.GET)
     @ResponseStatus(HttpStatus.OK)
@@ -45,6 +44,7 @@ public class ProductController {
     public Product update(@RequestBody Product product) {
         return productRepository.save(product);
     }
+
     @RequestMapping(value = "save", method = RequestMethod.POST)
     @ResponseStatus(HttpStatus.OK)
     @ResponseBody
@@ -52,9 +52,9 @@ public class ProductController {
         return productRepository.save(product);
     }
 
-    @RequestMapping(value = "deleteById/{id}", method = RequestMethod.DELETE)
+    @RequestMapping(value = "delete/{id}", method = RequestMethod.DELETE)
     @ResponseStatus(HttpStatus.OK)
-    public void deleteById(@PathVariable String id) {
+    public void delete(@PathVariable String id) {
         productRepository.deleteById(id);
     }
 }

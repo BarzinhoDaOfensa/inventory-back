@@ -1,6 +1,6 @@
-package com.barzinhodaofensa.inventoryback.repository;
+package com.stiick.stockback.repository;
 
-import com.barzinhodaofensa.inventoryback.entity.Product;
+import com.stiick.stockback.entity.Product;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 
