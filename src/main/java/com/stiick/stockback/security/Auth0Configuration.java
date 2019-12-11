@@ -1,4 +1,4 @@
-package com.barzinhodaofensa.inventoryback.security;
+package com.stiick.stockback.security;
 
 import com.auth0.Auth0;
 import org.springframework.beans.factory.annotation.Value;

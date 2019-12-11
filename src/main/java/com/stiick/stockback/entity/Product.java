@@ -1,4 +1,4 @@
-package com.barzinhodaofensa.inventoryback.entity;
+package com.stiick.stockback.entity;
 
 import lombok.Data;
 import org.springframework.data.annotation.Id;

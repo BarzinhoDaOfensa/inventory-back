@@ -1,4 +1,4 @@
-package com.barzinhodaofensa.inventoryback.security;
+package com.stiick.stockback.security;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
