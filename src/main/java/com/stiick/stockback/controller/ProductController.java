@@ -38,7 +38,7 @@ public class ProductController {
         return products;
     }
 
-    @RequestMapping(value = "", method = RequestMethod.PUT)
+    @RequestMapping(value = "update", method = RequestMethod.PUT)
     @ResponseStatus(HttpStatus.OK)
     @ResponseBody
     public Product update(@RequestBody Product product) {
