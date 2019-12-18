@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Controller
-@RequestMapping(value = "team")
+@RequestMapping(value = "user")
 public class UserController {
 
     private UserRepository userRepository;
