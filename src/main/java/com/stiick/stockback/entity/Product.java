@@ -13,6 +13,6 @@ public class Product {
     private String details;
     private long price;
     private String userOwned;
-    private String teamOwned:
+    private String teamOwned;
 
 }
