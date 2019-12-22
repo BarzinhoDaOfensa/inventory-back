@@ -12,7 +12,7 @@ public class Product {
     private int quantity;
     private String details;
     private long price;
-    private String userOwner;
-    private String teamOwner:
+    private String userOwned;
+    private String teamOwned:
 
 }
