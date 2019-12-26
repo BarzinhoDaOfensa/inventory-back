@@ -13,7 +13,7 @@ public class Team {
     @Id
     private String id;
     private String name;
-    private List<String> users;
+    private List<User> users;
     private String admin;
     private Date createdAt;
     
